@@ -1,6 +1,12 @@
-import React from 'react'
-import App from "./MyPlan";
+import React from 'react';
+import {render} from 'react-dom';
+import {BrowserRouter as Router} from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import App from "./components/MyPlan";
 
-import { render } from "react-dom";
-
-render(<App />, document.getElementById("my-plan"));
+render(
+    <Router>
+        <App/>
+    </Router>,
+    document.getElementById("my-plan")
+);
