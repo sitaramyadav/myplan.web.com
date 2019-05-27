@@ -5,8 +5,9 @@ import Adapter from 'enzyme-adapter-react-16';
 
 Enzyme.configure({adapter: new Adapter()});
 
-describe('MyPlan unit test', () => {
-    it("MyPlan", () => {
+describe('About Page', () => {
+    Enzyme.configure({adapter: new Adapter()});
+    it("it should render the about page component", () => {
         const wrapper = shallow(<AboutPage />);
         expect(wrapper.exists()).toBe(true);
         expect(wrapper.text()).toBe('AboutStill it Development!!!');
