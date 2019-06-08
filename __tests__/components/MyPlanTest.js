@@ -10,6 +10,6 @@ describe('MyPlan unit test', () => {
        
        const wrapper = shallow(<MyPlan />);
        expect(wrapper.exists()).toBe(true);
-       expect(wrapper.text()).toBe('<Route /><Route />');
+       expect(wrapper.text()).toEqual('<Header /><Route /><Route />');
    })
 });
